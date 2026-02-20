@@ -1,0 +1,190 @@
+:root {
+    --color-fondo: #002f4d;
+    --color-fondo-secundario: #003d63;
+    --color-azul: #4a9dc8;
+    --color-dorado: #c8a45a;
+    --color-texto: #ffffff;
+    --color-peligro: #ff4444;
+}
+body {
+    background-color: #002f4d;
+    background-image: 
+        linear-gradient(
+        rgba(0, 47, 77, 0.7) 0%,
+        rgba(0, 47, 77, 0.1) 100%
+    ),
+        url('images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.titulo-estelar {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-dorado);
+    padding-bottom: 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nav-filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-filtros a {
+    background-color: #58b4f7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-filtros a:hover {
+    background-color: #4a9dc8;
+}
+
+button, .boton-crear {
+    background-color: #58b4f7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .boton-crear:hover {
+    background-color: #4a9dc8;
+}
+
+form {
+    background-color: rgba(0, 47, 77, 0.8);
+    border: 1px solid #58b4f7;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+form input, form select {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #58b4f7;
+    color: #ffffff;
+    padding: 8px 12px;
+    font-family: 'Orbitron', sans-serif;
+    margin: 5px;
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: rgba(0, 47, 77, 0.8);
+}
+
+table th {
+    background-color: #58b4f7;
+    color: #ffffff;
+    padding: 12px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(88, 180, 247, 0.3);
+    color: #ffffff;
+}
+
+table tr:hover {
+    background-color: rgba(88, 180, 247, 0.1);
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-dorado);
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-left: 4px solid var(--color-dorado);
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.paginacion {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.paginacion a {
+    background-color: rgba(0, 47, 77, 0.8);
+    border: 1px solid #58b4f7;
+    color: #ffffff;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.paginacion a:hover {
+    background-color: #58b4f7;
+}
+
+.paginacion .activo {
+    background-color: #58b4f7;
+    color: #ffffff;
+    padding: 8px 15px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.btn-editar, .btn-eliminar {
+    padding: 5px 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: #58b4f7;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-eliminar {
+    background-color: var(--color-peligro);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-editar:hover {
+    background-color: #4a9dc8;
+}
+
+.btn-eliminar:hover {
+    background-color: #cc0000;
+}
