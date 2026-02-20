@@ -13,7 +13,7 @@
 
     <?php $tipo = get_class($entidad); ?>
 
-    <form method="POST" action="/AP67/index.php?accion=editar" class="form-inline">
+    <form method="POST" action="/Expedicion Nova/index.php?accion=editar" class="form-inline">
         
         <input type="hidden" name="id" value="<?= $entidad->getId() ?>">
         <input type="hidden" name="tipoEntidad" value="<?= $tipo ?>">

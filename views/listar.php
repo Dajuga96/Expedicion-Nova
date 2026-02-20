@@ -24,7 +24,7 @@
     </nav>
 
 
-    <form method="POST" action="../AP67/index.php?accion=crear">
+    <form method="POST" action="../Expedicion Nova/index.php?accion=crear">
          <input type="text" name="id" placeholder="ID">
         <input type="text" name="nombre" placeholder="Nombre">
         <input type="text" name="planetaOrigen" placeholder="Planeta Origen">
@@ -100,8 +100,8 @@
             <td><?= $entidad->getEspecie() ?></td>
             <td><?= $entidad->getNivelAgresividad() ?></td>
             <td>
-                <a href="/AP67/index.php?accion=mostrarFormEditar&id=<?= $entidad->getId() ?>">Editar</a>
-                <a href="/AP67/index.php?accion=eliminar&id=<?= $entidad->getId() ?>" onclick="return confirm('¿Seguro?')">Eliminar</a>
+                <a href="/Expedicion Nova/index.php?accion=mostrarFormEditar&id=<?= $entidad->getId() ?>" class="btn-editar">Editar</a>
+                <a href="/Expedicion Nova/index.php?accion=eliminar&id=<?= $entidad->getId() ?>" onclick="return confirm('¿Seguro?')" class="btn-eliminar">Eliminar</a>
             </td>
         </tr>
         <?php endif; ?>
@@ -136,8 +136,8 @@
             <td><?= $entidad->getScu() ?></td>
             <td><?= $entidad->getPureza() ?></td>
             <td>
-                <a href="/AP67/index.php?accion=mostrarFormEditar&id=<?= $entidad->getId() ?>">Editar</a>
-                <a href="/AP67/index.php?accion=eliminar&id=<?= $entidad->getId() ?>" onclick="return confirm('¿Seguro?')">Eliminar</a>
+                <a href="/Expedicion Nova/index.php?accion=mostrarFormEditar&id=<?= $entidad->getId() ?>" class="btn-editar">Editar</a>
+                <a href="/Expedicion Nova/index.php?accion=eliminar&id=<?= $entidad->getId() ?>" onclick="return confirm('¿Seguro?')" class="btn-eliminar">Eliminar</a>
             </td>
         </tr>
         <?php endif; ?>
@@ -173,8 +173,8 @@
             <td><?= $entidad->getSaludCasco() ?></td>
             <td><?= $entidad->getEstado() ?></td>
             <td>
-                <a href="/AP67/index.php?accion=mostrarFormEditar&id=<?= $entidad->getId() ?>" class="btn-editar">Editar</a>
-                <a href="/AP67/index.php?accion=eliminar&id=<?= $entidad->getId() ?>" onclick="return confirm('¿Seguro?')" class="btn-eliminar">Eliminar</a>
+                <a href="/Expedicion Nova/index.php?accion=mostrarFormEditar&id=<?= $entidad->getId() ?>" class="btn-editar">Editar</a>
+                <a href="/Expedicion Nova/index.php?accion=eliminar&id=<?= $entidad->getId() ?>" onclick="return confirm('¿Seguro?')" class="btn-eliminar">Eliminar</a>
             </td>
         </tr>
         <?php endif; ?>
